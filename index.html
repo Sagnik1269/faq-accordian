@@ -10,12 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | FAQ accordion</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -54,8 +48,8 @@
           <button onclick="toggleq2()" class="accordian-header-button">
             <span class="accordian-question"> Is Frontend Mentor free?</span>
             <span class="accordian-icon-plus">
-              <img class="icon-plus-2" src="assets/images/icon-plus.svg" alt="plus">
-              <img class="icon-minus-2" src="assets/images/icon-minus.svg" alt="minus">
+              <img id="plus2" class="icon-plus-2" src="assets/images/icon-plus.svg" alt="plus">
+              <img id="minus2" class="icon-minus-2" src="assets/images/icon-minus.svg" alt="minus">
             </span>
           </button>
         </div>
@@ -72,8 +66,8 @@
           <button onclick="toggleq3()" class="accordian-header-button">
             <span class="accordian-question"> Can I use Frontend Mentor projects in my portfolio?</span>
             <span class="accordian-icon-plus">
-              <img class="icon-plus-3" src="assets/images/icon-plus.svg" alt="plus">
-              <img class="icon-minus-3" src="assets/images/icon-minus.svg" alt="minus">
+              <img id="plus3" class="icon-plus-3" src="assets/images/icon-plus.svg" alt="plus">
+              <img id="minus3" class="icon-minus-3" src="assets/images/icon-minus.svg" alt="minus">
             </span>
           </button>
         </div>
@@ -90,8 +84,8 @@
           <button onclick="toggleq4()" class="accordian-header-button">
             <span class="accordian-question">  How can I get help if I'm stuck on a Frontend Mentor challenge?</span>
             <span class="accordian-icon-plus">
-              <img class="icon-plus-4" src="assets/images/icon-plus.svg" alt="plus">
-              <img class="icon-minus-4" src="assets/images/icon-minus.svg" alt="minus">
+              <img id="plus4" class="icon-plus-4" src="assets/images/icon-plus.svg" alt="plus">
+              <img id="minus4" class="icon-minus-4" src="assets/images/icon-minus.svg" alt="minus">
             </span>
           </button>
         </div>
@@ -116,24 +110,36 @@
         var plus = document.getElementById("plus1");
         var minus = document.getElementById("minus1");
         span.style.display = (span.style.display === "none" || span.style.display === "") ? "contents" : "none";
-        plus.style.display = plusImage.style.display === "none" ? "block" : "none";
-        minus.style.display = minusImage.style.display === "none" ? "block" : "none";
+        plus.style.display = (plus.style.display === "none") ? "block" : "none";
+        minus.style.display = (minus.style.display === "block") ? "none" : "block";
 
     }
 
     function toggleq2() {
         var span = document.getElementById("q2");
+        var plus = document.getElementById("plus2");
+        var minus = document.getElementById("minus2");
         span.style.display = (span.style.display === "none" || span.style.display === "") ? "contents" : "none";
+        plus.style.display = (plus.style.display === "none") ? "block" : "none";
+        minus.style.display = (minus.style.display === "block") ? "none" : "block";
     }
 
     function toggleq3() {
         var span = document.getElementById("q3");
+        var plus = document.getElementById("plus3");
+        var minus = document.getElementById("minus3");
         span.style.display = (span.style.display === "none" || span.style.display === "") ? "contents" : "none";
+        plus.style.display = (plus.style.display === "none") ? "block" : "none";
+        minus.style.display = (minus.style.display === "block") ? "none" : "block";
     }
 
     function toggleq4() {
         var span = document.getElementById("q4");
+        var plus = document.getElementById("plus4");
+        var minus = document.getElementById("minus4");
         span.style.display = (span.style.display === "none" || span.style.display === "") ? "contents" : "none";
+        plus.style.display = (plus.style.display === "none") ? "block" : "none";
+        minus.style.display = (minus.style.display === "block") ? "none" : "block";
     }
 </script>
 
