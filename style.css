@@ -1,0 +1,142 @@
+
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    background-color: hsl(275, 100%, 97%);
+}
+
+.content{
+    width: 800px;
+    height: auto;
+    position: fixed;
+    background-color: hsl(0, 0%, 100%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 40px 40px 40px 40px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    height: fit-content
+}
+
+
+.header-icon{
+    margin-right: 15px;
+    
+}
+
+.header-text{
+    font-size: 56px;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+.accordian-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordian-question{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.accordian-answer{
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+}
+
+.accordian-answer-1{
+    display: none;
+}
+.accordian-answer-2{
+    display: none;
+}
+.accordian-answer-3{
+    display: none;
+}
+.accordian-answer-4{
+    display: none;
+}
+
+.accordian-item{
+    width: 100%;
+}
+
+.accordian-header-button{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: none;
+    background: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.accordian-header-button:hover{
+    color: #AD28EB;
+    cursor: pointer;
+    transition: 400ms;
+
+}
+
+.icon-plus-1{
+    display: block;
+}
+
+.icon-plus-2{
+    display: block;
+}
+
+.icon-plus-3{
+    display: block;
+}
+
+.icon-plus-4{
+    display: block;
+}
+
+.icon-minus-1{
+    display: none;
+}
+
+.icon-minus-2{
+    display: none;
+}
+
+.icon-minus-3{
+    display: none;
+}
+
+.icon-minus-4{
+    display: none;
+}
+
+hr{
+    background-color: hsl(275, 100%, 97%);
+    color:  hsl(275, 100%, 97%);
+    opacity: 75%;
+    height: 2px;
+    border: none;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href = "style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <div class="header">
+      <span class="header-icon">
+        <img src="assets/images/icon-star.svg" alt="main-icon" />
+      </span>
+      <span class="header-text">
+        FAQs
+      </span>
+    </div>
+  
+    <div class="accordian-col">
+      <div class="accordian-item">
+        <div class="accordian-header">
+          <button onclick="toggleq1()" class="accordian-header-button">
+            <span class="accordian-question"> What is Frontend Mentor, and how will it help me?</span>
+            <span class="accordian-icon-plus">
+              <img id="plus1" class="icon-plus-1" src="assets/images/icon-plus.svg" alt="plus">
+              <img id="minus1" class="icon-minus-1" src="assets/images/icon-minus.svg" alt="minus">
+            </span>
+          </button>
+        </div>
+        <div class="accordian-answer">
+          <span id="q1" class="accordian-answer-1">
+            <p>Frontend Mentor offers realistic coding challenges to help developers improve their 
+              frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+              all levels and ideal for portfolio building.</p>
+          </span>
+        </div>
+      </div>
+      <hr color="hsl(292, 16%, 49%);">
+      <div class="accordian-item">
+        <div class="accordian-header">
+          <button onclick="toggleq2()" class="accordian-header-button">
+            <span class="accordian-question"> Is Frontend Mentor free?</span>
+            <span class="accordian-icon-plus">
+              <img class="icon-plus-2" src="assets/images/icon-plus.svg" alt="plus">
+              <img class="icon-minus-2" src="assets/images/icon-minus.svg" alt="minus">
+            </span>
+          </button>
+        </div>
+        <div class="accordian-answer">
+          <span id="q2" class="accordian-answer-2">
+            <p>Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+              option providing access to a range of projects suitable for all skill levels.</p>
+          </span>
+        </div>
+      </div>
+      <hr>
+      <div class="accordian-item">
+        <div class="accordian-header">
+          <button onclick="toggleq3()" class="accordian-header-button">
+            <span class="accordian-question"> Can I use Frontend Mentor projects in my portfolio?</span>
+            <span class="accordian-icon-plus">
+              <img class="icon-plus-3" src="assets/images/icon-plus.svg" alt="plus">
+              <img class="icon-minus-3" src="assets/images/icon-minus.svg" alt="minus">
+            </span>
+          </button>
+        </div>
+        <div class="accordian-answer">
+          <span id="q3" class="accordian-answer-3">
+            <p> Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+              way to showcase your skills to potential employers!</p>
+          </span>
+        </div>
+      </div>
+      <hr>
+      <div class="accordian-item">
+        <div class="accordian-header">
+          <button onclick="toggleq4()" class="accordian-header-button">
+            <span class="accordian-question">  How can I get help if I'm stuck on a Frontend Mentor challenge?</span>
+            <span class="accordian-icon-plus">
+              <img class="icon-plus-4" src="assets/images/icon-plus.svg" alt="plus">
+              <img class="icon-minus-4" src="assets/images/icon-minus.svg" alt="minus">
+            </span>
+          </button>
+        </div>
+        <div class="accordian-answer">
+          <span id="q4" class="accordian-answer-4">
+            <p>The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+              channel where you can ask questions and seek support from other community members.</p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Sagnik Mondal</a>.
+  </div>
+
+  <script>
+    function toggleq1() {
+        var span = document.getElementById("q1");
+        var plus = document.getElementById("plus1");
+        var minus = document.getElementById("minus1");
+        span.style.display = (span.style.display === "none" || span.style.display === "") ? "contents" : "none";
+        plus.style.display = plusImage.style.display === "none" ? "block" : "none";
+        minus.style.display = minusImage.style.display === "none" ? "block" : "none";
+
+    }
+
+    function toggleq2() {
+        var span = document.getElementById("q2");
+        span.style.display = (span.style.display === "none" || span.style.display === "") ? "contents" : "none";
+    }
+
+    function toggleq3() {
+        var span = document.getElementById("q3");
+        span.style.display = (span.style.display === "none" || span.style.display === "") ? "contents" : "none";
+    }
+
+    function toggleq4() {
+        var span = document.getElementById("q4");
+        span.style.display = (span.style.display === "none" || span.style.display === "") ? "contents" : "none";
+    }
+</script>
+
+</body>
+</html>
