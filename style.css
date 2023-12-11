@@ -95,7 +95,7 @@ body{
     margin-bottom: 15px;
 }
 
-.accordian-header-button:hover .accordian-header-button::selection{
+.accordian-header-button:hover{
     color: #AD28EB;
     cursor: pointer;
     transition: 400ms;
